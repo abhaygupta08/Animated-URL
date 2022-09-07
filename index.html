@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated URL</title>
+    <link rel="stylesheet" href="style.css">
+<script src="./customNavigate.js"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/monaco-editor/min/vs/loader.js"></script>
+
+</head>
+
+<body>
+    <h1 align="center" style="opacity: 70%">Animated URL</h1>
+    <div align="center">
+        Demo Click on the link below to see the animation on URL <br/><br/>
+        <a class="link" href="/someLink.html">someLink</a> |
+        <a class="link" href="/someLink/subLink.html">Nested someLink</a> |
+        <a class="link" href="/anotherLink.html">anotherLink</a> |
+        <a class="link" target="_blank" href="https://github.com/abhaygupta08">Abhay Gupta (target blank)</a>
+    </div>
+    <div style="margin-top: 4rem;" align="center">
+    <button class="cdnLink"><span>Copy CDN Link</span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+    </div>
+    <div style="margin-top: 0rem;margin-bottom: 5rem;">
+        <div class="wrapper">
+            <div class="editor">
+                <div class="editor__code">
+                    <div id="editorCode"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" id="editorCopyClipboard">Copy Javascript Function</button>
+                <button class="button" ><a style="text-decoration: none; color: white;" target="_blank" href="/customNavigate.js" download="customNavigate.js">Download File</a></button>
+            </div>
+
+            
+        </div>
+<div class="wrapper"
+ >
+ <div class="usage">
+     
+     <br/>
+     <br/>
+        <h3>Usage :</h3> 
+     <br/>
+     <code>
+            const anchor = document.querySelector('a');<br/>
+            anchor.addEventListener("click", (e) => {<br/>
+                &emsp;e.preventDefault();<br/>
+                &emsp;customNavigate(<br/>
+                &emsp;&emsp;anchor.href.replace(window.location.origin, ""),<br/>
+                &emsp;&emsp;anchor.target<br/>
+                &emsp;);<br/>
+            });<br/>
+        </code>
+    </div>
+</div>
+<hr>
+<br>
+<div align="center">
+    <div><a class="github-button" href="https://github.com/abhaygupta08/Animated-URL" data-icon="octicon-star" data-size="large" aria-label="Star abhaygupta08/Animated-URL on GitHub">Star</a>
+<a class="github-button" href="https://github.com/abhaygupta08/Animated-URL/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork abhaygupta08/Animated-URL on GitHub">Fork</a>
+<a class="github-button" href="https://github.com/abhaygupta08" data-size="large" data-show-count="true" aria-label="Follow @abhaygupta08 on GitHub">Follow @abhaygupta08</a>
+</div>
+<div>
+    <a  class="link" style=" font-weight : bold; " href="https://github.com/abhaygupta08/Animated-URL" target="_blank" > git / Animated-URL</a>
+</div>
+</div>
+<script src="/script.js"></script>
+</body>
+
+
+</html>
