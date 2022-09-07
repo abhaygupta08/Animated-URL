@@ -1,7 +1,7 @@
 const cdnLink = document.querySelector(".cdnLink");
 cdnLink.onclick = () => {
-    copyToClipboard(cdnLink.innerHTML);
-    const cdnLinkText = cdnLink.innerHTML;
+    copyToClipboard('https://raw.githubusercontent.com/abhaygupta08/Animated-URL/main/customNavigate.js');
+    const cdnLinkText = 'https://raw.githubusercontent.com/abhaygupta08/Animated-URL/main/customNavigate.js';
     cdnLink.innerHTML = "Copied !";
     cdnLink.disabled = true;
     setTimeout(() => {
